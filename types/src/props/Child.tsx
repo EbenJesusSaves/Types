@@ -4,7 +4,8 @@ import { Button, View } from 'react-native/types';
 interface ChildProps {
 
     color: string;
-    onClick :()=> string 
+    onClick :()=> void; 
+    comeHere ?: boolean
 }
 
 // export const Child = ({color}: ChildProps) => {
@@ -15,13 +16,13 @@ interface ChildProps {
 
 
 
-export const ChildTwo :  React.FC<ChildProps> = ({color, onClick})=>{
+export const ChildTwo :  React.FC<ChildProps> = ({color,comeHere, onClick })=>{
 
 return <View> {color}
 
 <View >
 
-    <Button title='Hi' onPress={onClick} />
+    <Button title='Hi' onPress={onClick}   />
 </View>
 
 </View>

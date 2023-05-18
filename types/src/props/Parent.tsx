@@ -1,8 +1,8 @@
  import React from 'react'
-import { Child } from "./Child";
+import { ChildTwo } from "./Child";
 
 export const Parent = () => {
   return (
-   <Child color='come'/>
+   <ChildTwo color='come' onClick={()=>{}}/>
   )
 }
